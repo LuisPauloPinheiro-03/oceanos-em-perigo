@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda sobre os impactos do descarte inadequado de resíduos nos oceanos e descubra como preservar a vida marinha.">
+  <meta name="theme-color" content="#020d1a">
+  <title>Oceanos em Perigo — Educação Ambiental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="#hero" class="nav-logo" aria-label="Oceanos em Perigo — Ir para o início">
+        Navegando para um Futuro Sustentável<span class="nav-logo__dot" aria-hidden="true">.</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#impactos">Impactos</a></li>
+        <li><a href="#voce-sabia">Você Sabia?</a></li>
+        <li><a href="#oceano-vivo">Oceano Vivo</a></li>
+        <li><a href="#dados">Dados</a></li>
+        <li><a href="#jogo">🎮 Jogo</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#acoes">O Que Fazer</a></li>
+        <li><a href="#impacto-coletivo">Seu Impacto</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-mobile" aria-expanded="false" aria-label="Abrir menu de navegação" type="button">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </nav>
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile" aria-hidden="true">
+      <a href="#impactos">Impactos</a>
+      <a href="#voce-sabia">Você Sabia?</a>
+      <a href="#oceano-vivo">Oceano Vivo</a>
+      <a href="#dados">Dados</a>
+      <a href="#jogo">🎮 Jogo</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#acoes">O Que Fazer</a>
+      <a href="#impacto-coletivo">Seu Impacto</a>
+    </nav>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+  </header>
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="hero__waves" aria-hidden="true">
+      <div class="wave wave--1"></div>
+      <div class="wave wave--2"></div>
+      <div class="wave wave--3"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Educação Ambiental Digital</p>
+      <h1 id="hero-title">
+        Oceanos<br>
+        <span class="hero__title-line2">em Perigo</span>
+      </h1>
+      <p class="hero__subtitle">
+        Cada ano, milhões de toneladas de lixo chegam aos nossos oceanos.
+        Descubra os impactos e aprenda como você pode ajudar a mudar essa realidade.
+      </p>
+      <a href="#impactos" class="btn btn--primary">Explorar agora</a>
+    </div>
+    <div class="hero__stats" role="list" aria-label="Dados sobre poluição oceânica">
+      <div class="stat" role="listitem">
+        <span class="stat__number" data-target="8" data-suffix=" mi ton">0</span>
+        <span class="stat__label">de plástico nos oceanos por ano</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat__number" data-target="700" data-suffix="+">0</span>
+        <span class="stat__label">espécies marinhas ameaçadas</span>
+      </div>
+      <div class="stat" role="listitem">
+        <span class="stat__number" data-target="90" data-suffix="%">0</span>
+        <span class="stat__label">das aves marinhas afetadas por lixo</span>
+      </div>
+    </div>
+  </section>
+  <section id="impactos" aria-labelledby="impactos-title">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-label" aria-hidden="true">Os Problemas</p>
+        <h2 id="impactos-title">O que o lixo faz<br>com o oceano?</h2>
+        <p class="section-intro">
+          O descarte inadequado de resíduos provoca danos irreversíveis aos ecossistemas
+          marinhos. Veja os principais impactos.
+        </p>
+      </header>
+      <div class="impact-grid">
+        <article class="impact-card impact-card--red reveal">
+          <span class="impact-card__icon" role="img" aria-label="Peixe">🐠</span>
+          <h3>Morte da Vida Marinha</h3>
+          <p class="impact-card__body">
+            Animais marinhos confundem plástico com alimento, morrem presos em redes e sacolas
+            ou sofrem intoxicação por substâncias químicas liberadas pelos resíduos.
+          </p>
+          <p class="impact-card__stat">
+            1 milhão
+            <span class="impact-card__stat-desc">de aves e 100 mil mamíferos marinhos mortos por ano</span>
+          </p>
+        </article>
+        <article class="impact-card impact-card--orange reveal">
+          <span class="impact-card__icon" role="img" aria-label="Ondas">🌊</span>
+          <h3>Microplásticos</h3>
+          <p class="impact-card__body">
+            Plásticos se fragmentam em partículas invisíveis que se infiltram na cadeia alimentar.
+            Pesquisas já encontraram microplásticos no sangue humano e no leite materno.
+          </p>
+          <p class="impact-card__stat">
+            5 trilhões
+            <span class="impact-card__stat-desc">de partículas de plástico flutuando nos oceanos hoje</span>
+          </p>
+        </article>
+        <article class="impact-card impact-card--blue reveal">
+          <span class="impact-card__icon" role="img" aria-label="Termômetro">🌡️</span>
+          <h3>Mudanças Climáticas</h3>
+          <p class="impact-card__body">
+            A poluição combinada com o aquecimento global causa acidificação dos oceanos,
+            branqueamento de corais e destruição de recifes que sustentam 25% da vida marinha.
+          </p>
+          <p class="impact-card__stat">
+            50%
+            <span class="impact-card__stat-desc">dos corais do mundo já foram destruídos ou degradados</span>
+          </p>
+        </article>
+        <article class="impact-card impact-card--green reveal">
+          <span class="impact-card__icon" role="img" aria-label="DNA">🧬</span>
+          <h3>Risco à Saúde Humana</h3>
+          <p class="impact-card__body">
+            Toxinas acumuladas em peixes chegam à nossa mesa. Além disso, praias poluídas causam
+            doenças gastrointestinais e infecções em banhistas.
+          </p>
+          <p class="impact-card__stat">
+            R$ 13 bi
+            <span class="impact-card__stat-desc">de prejuízo ao turismo e pesca no Brasil por ano</span>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="voce-sabia" aria-labelledby="sabia-title">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <p class="section-label" aria-hidden="true">Curiosidades</p>
+        <h2 id="sabia-title">Você Sabia?</h2>
+        <p class="section-intro">
+          Clique em cada cartão para descobrir um fato surpreendente sobre os oceanos! 🌊
+        </p>
+      </header>
+      <div class="flip-grid" role="list">
+        <div class="flip-card reveal" role="listitem">
+          <div class="flip-card__inner" tabindex="0" role="button" aria-pressed="false" aria-label="Cartão: A água do oceano. Clique para revelar o fato.">
+            <div class="flip-card__front">
+              <span class="flip-card__emoji" aria-hidden="true">🌊</span>
+              <p class="flip-card__prompt">A água do oceano…</p>
+              <span class="flip-card__hint" aria-hidden="true">Clique para descobrir</span>
+            </div>
+            <div class="flip-card__back" aria-hidden="true">
+              <span class="flip-card__emoji">💧</span>
+              <p class="flip-card__fact">Cobre <strong>71%</strong> da superfície da Terra — mas só <strong>5%</strong> foi explorado pelos humanos. O fundo do mar é mais desconhecido que a Lua!</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" role="listitem">
+          <div class="flip-card__inner" tabindex="0" role="button" aria-pressed="false" aria-label="Cartão: Um canudo plástico. Clique para revelar o fato.">
+            <div class="flip-card__front">
+              <span class="flip-card__emoji" aria-hidden="true">🥤</span>
+              <p class="flip-card__prompt">Um canudo plástico…</p>
+              <span class="flip-card__hint" aria-hidden="true">Clique para descobrir</span>
+            </div>
+            <div class="flip-card__back" aria-hidden="true">
+              <span class="flip-card__emoji">⏳</span>
+              <p class="flip-card__fact">É usado por apenas <strong>10 minutos</strong>, mas leva até <strong>200 anos</strong> para se decompor. Nunca vai desaparecer de verdade — só vira microplástico!</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" role="listitem">
+          <div class="flip-card__inner" tabindex="0" role="button" aria-pressed="false" aria-label="Cartão: As baleias azuis. Clique para revelar o fato.">
+            <div class="flip-card__front">
+              <span class="flip-card__emoji" aria-hidden="true">🐋</span>
+              <p class="flip-card__prompt">As baleias azuis…</p>
+              <span class="flip-card__hint" aria-hidden="true">Clique para descobrir</span>
+            </div>
+            <div class="flip-card__back" aria-hidden="true">
+              <span class="flip-card__emoji">🔊</span>
+              <p class="flip-card__fact">São os animais mais barulhentos do planeta! O canto delas chega a <strong>188 decibéis</strong> — mais alto que um avião a jato — e pode ser ouvido a <strong>800 km</strong> de distância.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" role="listitem">
+          <div class="flip-card__inner" tabindex="0" role="button" aria-pressed="false" aria-label="Cartão: O lixo no oceano. Clique para revelar o fato.">
+            <div class="flip-card__front">
+              <span class="flip-card__emoji" aria-hidden="true">🗑️</span>
+              <p class="flip-card__prompt">O lixo no oceano…</p>
+              <span class="flip-card__hint" aria-hidden="true">Clique para descobrir</span>
+            </div>
+            <div class="flip-card__back" aria-hidden="true">
+              <span class="flip-card__emoji">🏝️</span>
+              <p class="flip-card__fact">Formou uma <strong>"ilha de lixo"</strong> no Pacífico com o dobro do tamanho do Texas! São mais de <strong>80.000 toneladas</strong> de plástico flutuando num só lugar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" role="listitem">
+          <div class="flip-card__inner" tabindex="0" role="button" aria-pressed="false" aria-label="Cartão: O peixe-palhaço. Clique para revelar o fato.">
+            <div class="flip-card__front">
+              <span class="flip-card__emoji" aria-hidden="true">🐠</span>
+              <p class="flip-card__prompt">O peixe-palhaço…</p>
+              <span class="flip-card__hint" aria-hidden="true">Clique para descobrir</span>
+            </div>
+            <div class="flip-card__back" aria-hidden="true">
+              <span class="flip-card__emoji">🪸</span>
+              <p class="flip-card__fact">Vive em anêmonas venenosas que seriam fatais para outros peixes. Com a destruição dos corais, eles perdem seu <strong>único lar</strong> no oceano!</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card reveal" role="listitem">
+          <div class="flip-card__inner" tabindex="0" role="button" aria-pressed="false" aria-label="Cartão: O oxigênio que respiramos. Clique para revelar o fato.">
+            <div class="flip-card__front">
+              <span class="flip-card__emoji" aria-hidden="true">🌿</span>
+              <p class="flip-card__prompt">O oxigênio que respiramos…</p>
+              <span class="flip-card__hint" aria-hidden="true">Clique para descobrir</span>
+            </div>
+            <div class="flip-card__back" aria-hidden="true">
+              <span class="flip-card__emoji">🫁</span>
+              <p class="flip-card__fact"><strong>50% do oxigênio</strong> que você está respirando agora veio do oceano! Ele é produzido por plantas microscópicas chamadas fitoplâncton que estão sendo ameaçadas pela poluição.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="oceano-vivo" aria-labelledby="oceano-title">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <p class="section-label" aria-hidden="true">Visualização</p>
+        <h2 id="oceano-title">Como está<br>o nosso oceano?</h2>
+        <p class="section-intro">
+          Veja a diferença entre um oceano saudável e um poluído — e o que cada item de lixo
+          representa para a vida marinha.
+        </p>
+      </header>
+      <div class="ocean-scene" id="oceanScene" role="img" aria-label="Cena animada do oceano mostrando vida marinha" aria-live="polite"></div>
+      <div class="ocean-controls" role="group" aria-label="Escolha o estado do oceano">
+        <button class="btn btn--success" data-ocean-btn="clean" aria-pressed="true" type="button">
+          🐬 Oceano Limpo
+        </button>
+        <button class="btn btn--danger" data-ocean-btn="polluted" aria-pressed="false" type="button">
+          🗑️ Oceano Poluído
+        </button>
+      </div>
+      <p class="ocean-msg" id="ocean-msg" aria-live="polite"></p>
+    </div>
+  </section>
+  <section id="dados" aria-labelledby="dados-title">
+    <div class="container">
+      <div class="data-layout">
+        <div class="reveal">
+          <header class="section-header">
+            <p class="section-label" aria-hidden="true">Números que Chocam</p>
+            <h2 id="dados-title">Os dados<br>da crise</h2>
+            <p class="section-intro">Dados que mostram a escala do problema — e a urgência de agir.</p>
+          </header>
+          <div class="bar-chart" role="list" aria-label="Gráfico de porcentagens sobre poluição">
+            <div class="bar-row" role="listitem">
+              <div class="bar-meta">
+                <span class="bar-meta__label">Plástico descartado incorretamente</span>
+                <span class="bar-meta__value" aria-hidden="true">91%</span>
+              </div>
+              <div class="bar-track" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" aria-label="91%">
+                <div class="bar-fill" style="width: 91%; background: var(--color-danger);"></div>
+              </div>
+            </div>
+            <div class="bar-row" role="listitem">
+              <div class="bar-meta">
+                <span class="bar-meta__label">Praias brasileiras com poluição visível</span>
+                <span class="bar-meta__value" aria-hidden="true">78%</span>
+              </div>
+              <div class="bar-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="78%">
+                <div class="bar-fill" style="width: 78%; background: var(--color-warning);"></div>
+              </div>
+            </div>
+            <div class="bar-row" role="listitem">
+              <div class="bar-meta">
+                <span class="bar-meta__label">Peixes com microplásticos no organismo</span>
+                <span class="bar-meta__value" aria-hidden="true">63%</span>
+              </div>
+              <div class="bar-track" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100" aria-label="63%">
+                <div class="bar-fill" style="width: 63%; background: var(--color-ocean-bright);"></div>
+              </div>
+            </div>
+            <div class="bar-row" role="listitem">
+              <div class="bar-meta">
+                <span class="bar-meta__label">Espécies marinhas afetadas por lixo</span>
+                <span class="bar-meta__value" aria-hidden="true">55%</span>
+              </div>
+              <div class="bar-track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="55%">
+                <div class="bar-fill" style="width: 55%; background: var(--color-success);"></div>
+              </div>
+            </div>
+            <div class="bar-row" role="listitem">
+              <div class="bar-meta">
+                <span class="bar-meta__label">Brasileiros que separam lixo corretamente</span>
+                <span class="bar-meta__value" aria-hidden="true">38%</span>
+              </div>
+              <div class="bar-track" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" aria-label="38%">
+                <div class="bar-fill" style="width: 38%; background: var(--color-ocean-foam);"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fact-box reveal" aria-label="Fatos sobre a crise oceânica">
+          <div class="fact-item">
+            <p class="fact-item__number" aria-label="Mais de 500">500+</p>
+            <p class="fact-item__text">Zonas mortas nos oceanos, onde o oxigênio está tão reduzido que nenhuma vida sobrevive</p>
+          </div>
+          <div class="fact-item">
+            <p class="fact-item__number">2050</p>
+            <p class="fact-item__text">Ano em que haverá mais plástico do que peixes nos oceanos, se nada mudar agora</p>
+          </div>
+          <div class="fact-item">
+            <p class="fact-item__number">10 min</p>
+            <p class="fact-item__text">Tempo médio de uso de um canudo plástico — que depois leva 200 anos para se decompor</p>
+          </div>
+          <div class="fact-item">
+            <p class="fact-item__number">50%</p>
+            <p class="fact-item__text">Do oxigênio que respiramos vem do oceano — produzido pelo fitoplâncton que está sendo ameaçado</p>
+          </div>
+          <div class="fact-item">
+            <p class="fact-item__number">8 kg</p>
+            <p class="fact-item__text">Quantidade de plástico descartada por cada brasileiro por mês, em média</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="jogo" aria-labelledby="jogo-title">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <p class="section-label" aria-hidden="true">Mini-Jogo</p>
+        <h2 id="jogo-title">Salve o Oceano!</h2>
+        <p class="section-intro">
+          Arraste cada item para o lugar certo — lixeira ou oceano.
+          Cada escolha importa para os animais marinhos! 🐠
+        </p>
+      </header>
+      <div class="game-wrapper">
+        <div class="game-stage">
+          <div class="game-item" id="gameItem" draggable="true" role="img" aria-label="Item para classificar" aria-grabbed="false">
+            <span class="game-item__emoji" id="gameItemEmoji" aria-hidden="true"></span>
+            <span class="game-item__name" id="gameItemName"></span>
+          </div>
+          <p class="game-hint" id="gameHint" aria-live="polite">
+            👆 Arraste o item acima para uma das zonas abaixo
+          </p>
+        </div>
+        <div class="game-zones">
+          <div class="game-zone game-zone--bin" id="zoneBin" role="button" tabindex="0" aria-label="Jogar na lixeira (correto)" data-zone="bin">
+            <span class="game-zone__icon" aria-hidden="true">🗑️</span>
+            <span class="game-zone__label">Lixeira</span>
+          </div>
+          <div class="game-zone game-zone--ocean" id="zoneOcean" role="button" tabindex="0" aria-label="Jogar no oceano (errado)" data-zone="ocean">
+            <span class="game-zone__icon" aria-hidden="true">🌊</span>
+            <span class="game-zone__label">Oceano</span>
+          </div>
+        </div>
+        <div class="game-score" aria-live="polite" aria-label="Placar do jogo">
+          <div class="game-score__item">
+            <span class="game-score__num" id="scoreRight">0</span>
+            <span class="game-score__lbl">✅ Certos</span>
+          </div>
+          <div class="game-score__sep" aria-hidden="true">/</div>
+          <div class="game-score__item">
+            <span class="game-score__num" id="scoreTotal">0</span>
+            <span class="game-score__lbl">jogados</span>
+          </div>
+        </div>
+        <div class="game-feedback" id="gameFeedback" aria-live="assertive" aria-atomic="true"></div>
+        <div class="game-result" id="gameResult" hidden>
+          <p class="game-result__emoji" id="gameResultEmoji"></p>
+          <h3 class="game-result__title" id="gameResultTitle"></h3>
+          <p class="game-result__msg" id="gameResultMsg"></p>
+          <button class="btn btn--primary" id="gameRestart" type="button">
+            Jogar de novo 🔄
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="quiz" aria-labelledby="quiz-title">
+    <div class="container">
+      <div class="quiz-wrapper">
+        <header class="section-header section-header--center">
+          <p class="section-label" aria-hidden="true">Teste Seus Conhecimentos</p>
+          <h2 id="quiz-title">Você conhece<br>o oceano?</h2>
+        </header>
+        <div class="quiz-card" role="region" aria-label="Quiz interativo sobre os oceanos">
+          <div class="quiz-progress" id="quizProgress" role="list" aria-label="Progresso do quiz"></div>
+          <div id="quizMain">
+            <h3 class="quiz-question" id="quizQ" aria-live="polite"></h3>
+            <div class="quiz-options" id="quizOpts" role="group" aria-labelledby="quizQ"></div>
+            <p class="quiz-feedback" id="quizFeed" aria-live="polite" aria-atomic="true"></p>
+            <button class="btn btn--primary quiz-next" id="quizNext" type="button" aria-label="Avançar para próxima pergunta"></button>
+          </div>
+          <div class="quiz-result" id="quizResult" role="region" aria-label="Resultado do quiz">
+            <div class="score-circle" aria-label="Pontuação final">
+              <span class="score-circle__number" id="finalScore">0</span>
+              <span class="score-circle__total">de 5</span>
+            </div>
+            <h3 class="result-title" id="resultTitle"></h3>
+            <p class="result-msg" id="resultMsg"></p>
+            <button class="btn btn--primary" id="quizRestart" type="button">
+              Tentar novamente
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="acoes" aria-labelledby="acoes-title">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-label" aria-hidden="true">Você Pode Ajudar</p>
+        <h2 id="acoes-title">Pequenas ações,<br>grande impacto</h2>
+        <p class="section-intro">
+          Não precisamos esperar governos ou empresas. Cada escolha individual importa.
+          Veja o que você pode fazer hoje.
+        </p>
+      </header>
+      <ul class="actions-grid" role="list">
+        <li class="action-card reveal">
+          <span class="action-card__icon" role="img" aria-label="Reciclagem">♻️</span>
+          <h4>Separe o Lixo</h4>
+          <p>Reciclar corretamente evita que resíduos cheguem aos rios e oceanos via aterros irregulares</p>
+        </li>
+        <li class="action-card reveal">
+          <span class="action-card__icon" role="img" aria-label="Sacola">🛍️</span>
+          <h4>Reduza o Plástico</h4>
+          <p>Use sacolas reutilizáveis, cantil, canudo de metal e embalagens sustentáveis no dia a dia</p>
+        </li>
+        <li class="action-card reveal">
+          <span class="action-card__icon" role="img" aria-label="Praia">🏖️</span>
+          <h4>Limpe Praias</h4>
+          <p>Participe ou organize mutirões de limpeza em praias e margens de rios na sua cidade</p>
+        </li>
+        <li class="action-card reveal">
+          <span class="action-card__icon" role="img" aria-label="Peixe">🐟</span>
+          <h4>Consuma com Consciência</h4>
+          <p>Escolha frutos do mar de fonte sustentável e reduza o desperdício de alimentos marinhos</p>
+        </li>
+        <li class="action-card reveal">
+          <span class="action-card__icon" role="img" aria-label="Megafone">📢</span>
+          <h4>Conscientize</h4>
+          <p>Compartilhe informações, pressione marcas e políticos, e inspire sua família e amigos</p>
+        </li>
+        <li class="action-card reveal">
+          <span class="action-card__icon" role="img" aria-label="Água">💧</span>
+          <h4>Cuide dos Rios</h4>
+          <p>Tudo que vai ao raso chega ao mar. Evite jogar lixo em ruas, rios e bueiros</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="impacto-coletivo" aria-labelledby="impacto-title">
+    <div class="container">
+      <header class="section-header section-header--center">
+        <p class="section-label" aria-hidden="true">O Poder da Coletividade</p>
+        <h2 id="impacto-title">E se todo mundo<br>fizesse a sua parte?</h2>
+        <p class="section-intro">
+          Arraste o controle abaixo para ver o que acontece quando milhares de pessoas
+          adotam um hábito simples juntas.
+        </p>
+      </header>
+      <div class="ic-actions" role="tablist" aria-label="Escolha uma ação">
+        <button class="ic-tab ic-tab--active" role="tab" aria-selected="true" data-action="0" type="button">Canudo</button>
+        <button class="ic-tab" role="tab" aria-selected="false" data-action="1" type="button">Sacola plástica</button>
+        <button class="ic-tab" role="tab" aria-selected="false" data-action="2" type="button">Separar lixo</button>
+        <button class="ic-tab" role="tab" aria-selected="false" data-action="3" type="button">Mutirão de praia</button>
+      </div>
+      <div class="ic-card" aria-live="polite" aria-atomic="true">
+        <div class="ic-headline">
+          <span class="ic-headline__prefix">Se</span>
+          <span class="ic-count" id="ic-count">1.000</span>
+          <span class="ic-headline__suffix" id="ic-suffix">pessoas pararem de usar canudos plásticos hoje,</span>
+        </div>
+        <div class="ic-slider-wrap">
+          <label for="ic-slider" class="ic-slider-label">
+            Arraste para simular mais pessoas
+          </label>
+          <div class="ic-slider-track-wrap">
+            <input type="range" id="ic-slider" class="ic-slider" min="1" max="5" value="1" step="1" aria-label="Número de pessoas participando">
+            <div class="ic-slider-marks" aria-hidden="true">
+              <span>1 mil</span>
+              <span>10 mil</span>
+              <span>100 mil</span>
+              <span>1 milhão</span>
+              <span>10 mi</span>
+            </div>
+          </div>
+        </div>
+        <div class="ic-result">
+          <div class="ic-result__number" id="ic-result-num">730.000</div>
+          <div class="ic-result__unit" id="ic-result-unit">canudos evitados por ano</div>
+          <p class="ic-result__context" id="ic-result-ctx">
+            equivalem a encher <strong id="ic-result-bold">7,3 piscinas olímpicas</strong> de plástico que não vai para o oceano.
+          </p>
+        </div>
+        <div class="ic-impact-bar" aria-hidden="true">
+          <div class="ic-impact-bar__fill" id="ic-bar-fill"></div>
+        </div>
+        <div class="ic-impact-scale" aria-hidden="true">
+          <span>Impacto individual</span>
+          <span>Impacto nacional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <span class="footer__logo" aria-label="Oceanos em Perigo">
+      Oceanos<span class="footer__logo-dot" aria-hidden="true">.</span>
+    </span>
+    <nav class="footer__links" aria-label="Links do rodapé">
+      <a href="#hero">Início</a>
+      <a href="#impactos">Impactos</a>
+      <a href="#dados">Dados</a>
+      <a href="#jogo">Jogo</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#acoes">Ações</a>
+      <a href="#impacto-coletivo">Seu Impacto</a>
+    </nav>
+    <p class="footer__credit">
+      Site educativo desenvolvido para conscientizar sobre a importância da preservação dos oceanos
+      e os impactos do descarte inadequado de resíduos.
+      <br>Fontes: PNUMA, WWF, National Geographic, Instituto Oceanográfico USP.
+    </p>
+    <p class="footer__tagline">🌊 Os oceanos cobrem 71% do planeta — vamos cuidar deles.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
