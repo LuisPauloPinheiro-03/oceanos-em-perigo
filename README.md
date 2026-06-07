@@ -1,4 +1,4 @@
-# 🌊 Oceanos em Perigo
+# 🌊 Navegando para um Futuro Sustentável.
 
 > Site educativo interativo sobre os impactos do descarte inadequado de resíduos nos oceanos — desenvolvido com HTML, CSS e JavaScript puro.
 
@@ -6,7 +6,7 @@
 
 ## 📌 Sobre o Projeto
 
-**Oceanos em Perigo** é uma plataforma web informativa e interativa criada como projeto educacional, com foco no público jovem (crianças e adolescentes). O objetivo é conscientizar sobre a poluição dos oceanos de forma visual, acessível e divertida.
+**Navegando para um Futuro Sustentável.** é uma plataforma web informativa e interativa criada como projeto educacional, com foco no público jovem (crianças e adolescentes). O objetivo é conscientizar sobre a poluição dos oceanos de forma visual, acessível e divertida.
 
 O projeto foi desenvolvido do zero utilizando apenas tecnologias front-end — sem frameworks, sem backend, sem dependências externas além das fontes web. Todo o código foi escrito e evoluído manualmente, com apoio de ferramentas de IA para auxiliar no aprendizado e na documentação.
 
